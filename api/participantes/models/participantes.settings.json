@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "participantes",
+  "info": {
+    "name": "Participantes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pnombre": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 100
+    }
+  }
+}

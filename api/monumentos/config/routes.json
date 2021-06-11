@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/monumentos",
+      "handler": "monumentos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monumentos/count",
+      "handler": "monumentos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monumentos/:id",
+      "handler": "monumentos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/monumentos",
+      "handler": "monumentos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/monumentos/:id",
+      "handler": "monumentos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/monumentos/:id",
+      "handler": "monumentos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
