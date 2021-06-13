@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lugares-monumentos",
+      "handler": "lugares-monumentos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lugares-monumentos/count",
+      "handler": "lugares-monumentos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lugares-monumentos/:id",
+      "handler": "lugares-monumentos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lugares-monumentos",
+      "handler": "lugares-monumentos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lugares-monumentos/:id",
+      "handler": "lugares-monumentos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lugares-monumentos/:id",
+      "handler": "lugares-monumentos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

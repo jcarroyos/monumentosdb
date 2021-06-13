@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lugares_monumentos",
+  "info": {
+    "name": "lugares-monumentos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lnombremonumento": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "ltipomonumento": {
+      "type": "enumeration",
+      "enum": [
+        "Interverncion",
+        "Bien",
+        "Manifestacion"
+      ],
+      "required": true
+    },
+    "lfechainstalacion": {
+      "type": "date",
+      "required": true
+    },
+    "lmotivoinstalacion": {
+      "type": "richtext",
+      "required": true,
+      "unique": true,
+      "maxLength": 250
+    },
+    "lnombrelugar": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "llatitud": {
+      "type": "decimal",
+      "required": true
+    },
+    "llongitud": {
+      "type": "decimal",
+      "required": true
+    },
+    "ltipoespacio": {
+      "type": "enumeration",
+      "enum": [
+        "Punto",
+        "Segmento",
+        "Poligono"
+      ]
+    },
+    "monumentos": {
+      "via": "lugares_monumento",
+      "collection": "monumentos"
+    }
+  }
+}

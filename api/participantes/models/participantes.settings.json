@@ -17,6 +17,10 @@
       "required": true,
       "unique": true,
       "maxLength": 100
+    },
+    "monumento": {
+      "via": "participantes",
+      "model": "monumentos"
     }
   }
 }

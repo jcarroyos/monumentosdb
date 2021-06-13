@@ -38,63 +38,6 @@
       "required": true,
       "maxLength": 200
     },
-    "pnombre": {
-      "type": "string",
-      "required": true,
-      "maxLength": 100,
-      "unique": false
-    },
-    "pdescripcion": {
-      "type": "richtext",
-      "required": true,
-      "unique": true,
-      "maxLength": 500
-    },
-    "mnombre": {
-      "type": "string",
-      "required": true,
-      "maxLength": 100
-    },
-    "mtipo": {
-      "type": "enumeration",
-      "enum": [
-        "Intervencion",
-        "Bien",
-        "Manifestacion"
-      ],
-      "required": true
-    },
-    "mfechainstalacion": {
-      "required": true,
-      "type": "date"
-    },
-    "mmotivoinsta": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 250,
-      "unique": true
-    },
-    "mlugar": {
-      "type": "string",
-      "required": true,
-      "maxLength": 60
-    },
-    "mlatitud": {
-      "type": "decimal",
-      "required": true
-    },
-    "mlognitud": {
-      "type": "decimal",
-      "required": true
-    },
-    "mlugartipo": {
-      "type": "enumeration",
-      "enum": [
-        "Punto",
-        "Segmento",
-        "Poligono"
-      ]
-    },
     "himagenantes": {
       "collection": "file",
       "via": "related",
@@ -119,6 +62,14 @@
       "type": "richtext",
       "required": true,
       "unique": true
+    },
+    "participantes": {
+      "collection": "participantes",
+      "via": "monumento"
+    },
+    "lugares_monumento": {
+      "via": "monumentos",
+      "model": "lugares-monumentos"
     }
   }
 }
