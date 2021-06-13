@@ -119,9 +119,6 @@
       "type": "richtext",
       "required": true,
       "unique": true
-    },
-    "MPrueba": {
-      "type": "string"
     }
   }
 }
