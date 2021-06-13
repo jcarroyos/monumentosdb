@@ -62,13 +62,13 @@
       "collection": "monumentos"
     },
     "lmonumentoicon": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     }
   }
