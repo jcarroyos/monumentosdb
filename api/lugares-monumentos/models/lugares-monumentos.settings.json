@@ -20,7 +20,7 @@
     "ltipomonumento": {
       "type": "enumeration",
       "enum": [
-        "Interverncion",
+        "Intervencion",
         "Bien",
         "Manifestacion"
       ],
@@ -60,6 +60,16 @@
     "monumentos": {
       "via": "lugares_monumento",
       "collection": "monumentos"
+    },
+    "lmonumentoicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }
