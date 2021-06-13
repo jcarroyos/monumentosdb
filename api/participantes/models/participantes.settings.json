@@ -21,6 +21,12 @@
     "monumento": {
       "via": "participantes",
       "model": "monumentos"
+    },
+    "pdescripcion": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 500,
+      "unique": true
     }
   }
 }

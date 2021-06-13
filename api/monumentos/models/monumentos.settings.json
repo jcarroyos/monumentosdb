@@ -64,8 +64,8 @@
       "unique": true
     },
     "participantes": {
-      "collection": "participantes",
-      "via": "monumento"
+      "via": "monumento",
+      "collection": "participantes"
     },
     "lugares_monumento": {
       "via": "monumentos",
