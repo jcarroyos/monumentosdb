@@ -42,11 +42,11 @@
       "maxLength": 60
     },
     "llatitud": {
-      "type": "decimal",
+      "type": "float",
       "required": true
     },
     "llongitud": {
-      "type": "decimal",
+      "type": "float",
       "required": true
     },
     "ltipoespacio": {
@@ -62,7 +62,7 @@
       "collection": "monumentos"
     },
     "lmonumentoicon": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
